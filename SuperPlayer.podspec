@@ -21,10 +21,10 @@ Pod::Spec.new do |spec|
     spec.ios.framework    = ['SystemConfiguration','CoreTelephony', 'VideoToolbox', 'CoreGraphics', 'AVFoundation', 'Accelerate']
     spec.ios.library = 'z', 'resolv', 'iconv', 'stdc++', 'c++', 'sqlite3'
 
-    # spec.subspec "Core" do |s|
-    #     s.source_files = 'SuperPlayer/**/*.{h,m}'
-    #     s.resource = 'SuperPlayer/Resource/*'
-    # end
+    spec.subspec "Core" do |s|
+    s.source_files = 'SuperPlayer/**/*.{h,m}'
+    s.resource = 'SuperPlayer/Resource/*'
+    end
 
     
     spec.subspec "Player" do |s|
